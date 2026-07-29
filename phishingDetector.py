@@ -6,7 +6,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score
 
 # %%
-df = pd.read_csv("phishing_clean_normalized_for_comprehend.csv")
+df = pd.read_csv("CEAS_08_cleaned.csv")
 
 #print(df.head())   #test to make sure the csv file is correct
 print(df.columns) #prints the names of the columns
@@ -82,10 +82,17 @@ email_vector = vectorizer.transform([email])
 #this will store 1 or 0 depending on whether the email is determined to be phsihing or non-phishing
 prediction = best_model.predict(email_vector)
 probabilities = best_model.predict_proba(email_vector)
+
 if prediction[0] == 1:
     print("Phishing.")
+    confidence = probabilities[0][1] * 100
 
 else:
     print("Not phishing.")
+    confidence = probabilities[0][0] * 100
+print(f"Confidence: {confidence:.2f}%")
+
+
+    
 
 # %%
