@@ -8,7 +8,7 @@ This is a classification model I am building to identify potential phishing emai
 I have rotated between a couple of data sets to train the model, but for now I think I will settle with the dataset I found on Hugging Face. I have included some data sets I found from Kaggle, but they are not exclusively phishing emails. Some are just spam or suspicious emails. The CSVs included in this repo have been formatted for use in this program.
 
 # Goals
-The goal is to have a website where this program will run in the background. The user can paste an email they thing is phishing and the program will return whether it thinks it is phishing or not phishing. 
+The goal is to have a website where this program will run in the background. The user can paste an email they thing is phishing and the program will return whether it thinks it is phishing or not phishing. I will be working on posting the program to this site https://ipvgevn04j.execute-api.us-east-1.amazonaws.com/default/HomePage
 
 Im still trying to figure out how to get the model to identify emails better. The predictions are not always correct, and even if they are correct, the confidence level may not be that high. The next goal I have is to make the detector print what it thought was an indicator of phishing in the email. This will help users to understand why their email may be suspicious. I also hope this feature can point out words that may be causing the model to give false positive or false negatives.
 
