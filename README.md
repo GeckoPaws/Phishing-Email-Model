@@ -14,3 +14,11 @@ Im still trying to figure out how to get the model to identify emails better. Th
 
 # Regarding Use Of Code
 Feel free to download and edit parts of this if you like. You can use it how you like as well. This is just a project I thought would be cool to make to gain some practical experience.
+
+
+# Objectives List
+- print words contributing to classification result
+- improve model's accuracy
+- create webpage for the program
+- deploy online using AWS
+- more objectives tba...
